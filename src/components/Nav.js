@@ -1,14 +1,14 @@
 import React from "react";
 import { Segment, Grid, Container, Menu } from "semantic-ui-react";
 import { Link } from "react-router-dom";
-import config from '../config.json';
+import config from "../config.json";
 
 const populateNav = (location) => {
   const development = config.development || false;
   const pages = config.pages;
   if (pages.length > 0) {
     return pages.map((page) => {
-      if (development || !development && !page.devOnly) {
+      if (development || (!development && !page.devOnly)) {
         return (
           <Menu.Item
             icon={page.icon}
@@ -19,6 +19,7 @@ const populateNav = (location) => {
           />
         );
       }
+      return null;
     });
   }
 };
