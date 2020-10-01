@@ -1,0 +1,24 @@
+{
+  "development": true,
+  "pages": [
+    {
+      "name": "home",
+      "icon": "home",
+      "path": "/"
+    },
+    {
+      "devOnly": true,
+      "name": "status",
+      "icon": "server",
+      "path": "/status"
+    },
+    {
+      "name": "docs",
+      "icon": "book",
+      "path": "/docs"
+    }
+  ],
+  "docs": [
+    "dining"
+  ]
+}
