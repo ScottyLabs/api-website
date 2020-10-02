@@ -1,9 +1,6 @@
 @font-face{
   font-family: 'JetBrains Mono';
-  src: url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/eot/JetBrainsMono-Regular.eot') format('embedded-opentype'),
-       url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
-       url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/woff/JetBrainsMono-Regular.woff') format('woff'),
-       url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/eot/JetBrainsMono-Regular.eot') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -64,5 +61,58 @@
   }
   50% {
     color: white;
+  }
+}
+
+.blink-green {
+  -webkit-animation: 1.25s blink-green linear infinite;
+  -moz-animation: 1.25s blink-green linear infinite;
+  -ms-animation: 1.25s blink-green linear infinite;
+  -o-animation: 1.25s blink-green linear infinite;
+  animation: 1.25s blink-green linear infinite;
+}
+
+@keyframes blink-green {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: limegreen;
+  }
+}
+
+@-moz-keyframes blink-green {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: limegreen;
+  }
+}
+
+@-webkit-keyframes blink-green {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: limegreen;
+  }
+}
+
+@-ms-keyframes blink-green {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: limegreen;
+  }
+}
+
+@-o-keyframes blink-green {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: limegreen;
   }
 }

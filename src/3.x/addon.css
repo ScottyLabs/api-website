@@ -1,0 +1,59 @@
+.swagger-ui .info .title small {
+  line-height: 2.5em;
+  border-radius: 12px;
+}
+
+.swagger-ui .info .base-url {
+  margin-top: 0.5em;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+div.markdown > p,
+div.opblock-summary-description {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.swagger-ui .model-title {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.swagger-ui .opblock .opblock-summary-method,
+.swagger-ui .opblock .tab-header > h4,
+.swagger-ui .opblock .opblock-section-header > h4,
+.swagger-ui label span,
+.swagger-ui .try-out > button,
+.swagger-ui option {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.swagger-ui select {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5em;
+}
+
+.swagger-ui .parameters-col_description p,
+.swagger-ui .response-col_description p {
+  margin: 0;
+}
+
+.swagger-ui .opblock-body pre.microlight {
+  font-weight: 300;
+}
+
+.swagger-ui .info code {
+  font-family: 'JetBrains Mono', monospace;
+  padding: 1px 5px;
+  background: rgba(0, 0, 0, .1);
+}
+
+.swagger-ui .tab li a {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.swagger-ui .parameter__type {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+table.model {
+  margin-left: 4ch;
+}
