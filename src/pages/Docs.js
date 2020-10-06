@@ -55,7 +55,7 @@ export const Docs = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get("http://localhost:5000/api/docs");
+      const response = await axios.get(process.env.REACT_APP_ROOT_URL + "/api/docs");
       const data = response.data;
       setConfig(data);
       setDevelopment(data.development);

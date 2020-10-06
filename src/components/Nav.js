@@ -9,7 +9,7 @@ export const Nav = ({ location }) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get("http://localhost:5000/api/pages");
+      const response = await axios.get(process.env.REACT_APP_ROOT_URL + "/api/pages");
       const data = response.data;
       setConfig(data);
       setDevelopment(data.development);
